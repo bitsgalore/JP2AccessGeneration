@@ -10,7 +10,7 @@ Github doesn't allow you to download individual files in a repo if they are over
 
 * *profiles* directory - contains XML-formatted [jpwrappa](https://github.com/openplanets/jpwrappa) profiles that were used to generate the lossles JP2s (jpwrappa is a Python wrapper for the [Aware JPEG 2000 SDK](http://www.aware.com/imaging/jpeg2000sdk.html)).
 * *outjpylyzer.xml* - [jpylyzer](https://github.com/openplanets/jpylyzer) output of all JP2 and JPX files in this repo.
-* For all others files, see the table below (you may need to use the scrollbar at the bottom to see all columns):
+* For all others files, see the table below (rightmost column shows command-line options used to create each image, use the scrollbar at the bottom to see it!):
 
 |Image name|Format|Source image|Creator tool|Command line|
 |:---|:---|:---|:---|:---|
