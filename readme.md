@@ -1,7 +1,10 @@
 # Generation of access images from lossless JP2 masters demo
 
 ##About this repo
-This repo serves to demonstrate a number of options that are available to derive lossy access images from losslessly compressed archival JP2s. A discussion of these results can be found in this [blog post]().
+This repo serves to demonstrate a number of options that are available to derive lossy access images from losslessly compressed archival JP2s. A discussion of these results can be found in this [blog post](). 
+
+## Note on downloading these files
+Github doesn't allow you to download individual files in a repo if they are over 10 (I think) MB! As some of the images here are above this limit, you should either clone this repo using *Git*, or use the  [Download ZIP](https://github.com/bitsgalore/JP2AccessGeneration/archive/master.zip) button. 
 
 ##Contents
 
