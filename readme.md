@@ -16,10 +16,10 @@ Github doesn't allow you to download individual files in a repo if they are over
 |:---|:---|:---|:---|:---|
 |balloon_eciRGBv2.tif|TIFF|[1783_balloonj.jpg](http://upload.wikimedia.org/wikipedia/commons/a/a8/1783_balloonj.jpg)|-|-|
 |balloon_master.jp2|JP2|balloon_eciRGBv2.tif|Aware|Via [jpwrappa](https://github.com/openplanets/jpwrappa), profile [optionsMasterLossless.xml](https://github.com/bitsgalore/JP2AccessGeneration/blob/master/profiles/optionsMasterLossless.xml)|
-|balloon_access_kdu.jpf|JPX|balloon_master.jp2|Kakadu|`kdu_transcode -i balloon_master.jp2`<br>`-o balloon_access_kdu.jpf` <br> `jpx_layers sRGB,0,1,2`<br> `Sprofile=PROFILE2` <br> `-rate 1.2`|
+|balloon_access_kdu.jpf|JPX|balloon_master.jp2|Kakadu|`kdu_transcode -i balloon_master.jp2`<br>`-o balloon_access_kdu.jpf` <br> `-jpx_layers sRGB,0,1,2`<br> `Sprofile=PROFILE2` <br> `-rate 1.2`|
 |balloon_access_aw.jp2|JP2|balloon_master.jp2|Aware|`j2kdriver -i balloon_master.jp2` <br> `-R 20` <br> `-w I97`<br> `-t JP2` <br> `-o balloon_access_aw.jp2`|
 |balloon_master_layers_precincts.jp2|JP2|balloon_eciRGBv2.tif|Aware|Via [jpwrappa](https://github.com/openplanets/jpwrappa), profile [optionsMasterLosslessLayersPrecincts.xml](https://github.com/bitsgalore/JP2AccessGeneration/blob/master/profiles/optionsMasterLosslessLayersPrecincts.xml)|
-|balloon_access_layers_precincts_kdu.jpf|JPX|balloon_master_layers_precincts.jp2|Kakadu|`kdu_transcode -i balloon_master_layers_precincts.jp2`<br>`-o balloon_access_layers_precincts_kdu.jpf` <br> `jpx_layers sRGB,0,1,2`<br> `Sprofile=PROFILE2` <br> `-rate 1.2`|
+|balloon_access_layers_precincts_kdu.jpf|JPX|balloon_master_layers_precincts.jp2|Kakadu|`kdu_transcode -i balloon_master_layers_precincts.jp2`<br>`-o balloon_access_layers_precincts_kdu.jpf` <br> `-jpx_layers sRGB,0,1,2`<br> `Sprofile=PROFILE2` <br> `-rate 1.2`|
 |balloon_access_layers_precincts_aw.jp2|JP2|balloon_master_layers_precincts.jp2|Aware|`j2kdriver -i balloon_master_layers_precincts.jp2` <br> `-ql 3` <br> `-t JP2` <br> `-o balloon_access_layers_precincts_aw.jp2`|
 
 ##Software used to create derived images
