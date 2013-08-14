@@ -22,6 +22,47 @@ Github doesn't allow you to download individual files in a repo if they are over
 |balloon_access_layers_precincts_kdu.jpf|JPX|balloon_master_layers_precincts.jp2|Kakadu|`kdu_transcode -i balloon_master_layers_precincts.jp2`<br>`-o balloon_access_layers_precincts_kdu.jpf` <br> `-jpx_layers sRGB,0,1,2`<br> `Sprofile=PROFILE2` <br> `-rate 1.2`|
 |balloon_access_layers_precincts_aw.jp2|JP2|balloon_master_layers_precincts.jp2|Aware|`j2kdriver -i balloon_master_layers_precincts.jp2` <br> `-ql 3` <br> `-t JP2` <br> `-o balloon_access_layers_precincts_aw.jp2`|
 
+##Encoding properties of lossless source images
+###balloon_master.jp2 
+|Parameter|Value|
+|:---|:---|
+|File format|JP2 (JPEG 2000 Part 1)|
+|Compression type|Lossless (reversible 5-3 wavelet filter)|
+|Colour transform|Yes (only for colour images)|
+|Number of decomposition levels|5|
+|Progression order |RPCL|
+|Tile size |1024 x 1024|
+|Code block size| 64 x 64 (2<sup>6</sup> x 2<sup>6</sup>)|
+|Number of quality layers|	1|
+|Error resilience|	Start-of-packet headers; end-of-packet headers; segmentation symbols|
+
+###balloon_master_layers_precincts.jp2
+
+|Parameter|Value|
+|:---|:---|
+|File format|JP2 (JPEG 2000 Part 1)|
+|Compression type|Lossless (reversible 5-3 wavelet filter)|
+|Colour transform|Yes (only for colour images)|
+|Number of decomposition levels|5|
+|Progression order |RPCL|
+|Tile size |1024 x 1024|
+|Code block size| 64 x 64 (2<sup>6</sup> x 2<sup>6</sup>)|
+|Precinct size	|256 x 256 (2<sup>8</sup>) for 2 highest resolution levels; 128 x 128 (2<sup>7</sup>) for remaining resolution levels|
+|Number of quality layers|10|
+|Target compression ratio layer 1|2560:1|
+|Target compression ratio layer 2|	1280:1|
+|Target compression ratio layer 3|	640:1|
+|Target compression ratio layer 4|	320:1|
+|Target compression ratio layer 5|	160:1|
+|Target compression ratio layer 6|	80:1|
+|Target compression ratio layer 7|	40:1|
+|Target compression ratio layer 8|	20:1|
+|Target compression ratio layer 8|	10:1|
+|Target compression ratio layer 10|	5:1 \*|
+|Error resilience|	Start-of-packet headers; end-of-packet headers; segmentation symbols|
+
+\* Actual compression ratio equals overall image compression ratio (which is usually smaller)
+
 ##Software used to create derived images
 - [Aware JPEG 2000 SDK](http://www.aware.com/imaging/jpeg2000sdk.html) v 3.19.0.0
 - [Kakadu](http://www.kakadusoftware.com/) v 7.2.2
