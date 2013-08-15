@@ -49,16 +49,7 @@ Github doesn't allow you to download individual files in a repo if they are over
 |Code block size| 64 x 64 (2<sup>6</sup> x 2<sup>6</sup>)|
 |Precinct size	|256 x 256 (2<sup>8</sup>) for 2 highest resolution levels; 128 x 128 (2<sup>7</sup>) for remaining resolution levels|
 |Number of quality layers|10|
-|Target compression ratio layer 1|2560:1|
-|Target compression ratio layer 2|	1280:1|
-|Target compression ratio layer 3|	640:1|
-|Target compression ratio layer 4|	320:1|
-|Target compression ratio layer 5|	160:1|
-|Target compression ratio layer 6|	80:1|
-|Target compression ratio layer 7|	40:1|
-|Target compression ratio layer 8|	20:1|
-|Target compression ratio layer 8|	10:1|
-|Target compression ratio layer 10|	5:1 \*|
+|Target compression ratio layers|2560:1 [1] ; 1280:1 [2] ;  640:1 [3] ; 320:1 [4] ; 160:1 [5] ; 80:1 [6] ; 40:1 [7] ; 20:1 [8] ; 10:1 [9] ; 5:1 [10]\*|
 |Error resilience|	Start-of-packet headers; end-of-packet headers; segmentation symbols|
 
 \* Actual compression ratio equals overall image compression ratio (which is usually smaller)
