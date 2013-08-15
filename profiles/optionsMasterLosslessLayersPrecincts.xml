@@ -80,7 +80,7 @@ Description: lossless JP2 encoding settings, 10 quality  layers, precincts
 
 -->
 
-<set-output-j2k-layers>10</set-output-j2k-layers>
+<set-output-j2k-layers>11</set-output-j2k-layers>
 <!--
 	Sets the number of quality layers.
 
@@ -97,10 +97,11 @@ Description: lossless JP2 encoding settings, 10 quality  layers, precincts
 <set-output-j2k-layer-ratio>7 20</set-output-j2k-layer-ratio>
 <set-output-j2k-layer-ratio>8 10</set-output-j2k-layer-ratio>
 <set-output-j2k-layer-ratio>9 5</set-output-j2k-layer-ratio>
+<set-output-j2k-layer-ratio>10 2.5</set-output-j2k-layer-ratio>
 
 <!--
 	Sets the target compression ratio for each quality layer.
-	Layer 9: best quality (smallest value out of 5:1 and actual overall compression ratio)
+	Layer 10: best quality (actual overall compression ratio)
 	Layer 0: poorest quality (target ratio 2560:1)
 	Following recommendation by Buckley & Tanner (2009) and additional research
 	by the British Library, target compression ratios are defined
